@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
 def evaluate_model(X_tr, X_te, y_tr, y_te, log=False):
     '''
-   This model fits our data and then prints the summary and residuals. All credit for this function goes to Lindsey.
+   This model fits our data and then prints the summary and residuals. All credit for this function goes to Lindsey Berlin.
     '''
     # Create and fit model
     model = sm.OLS(y_tr, sm.add_constant(X_tr)).fit()
